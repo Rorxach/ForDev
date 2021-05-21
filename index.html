@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>ForDev Coming Soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon"
+      type="image/png"
+      href="assets/icon.png">
+</head>
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('assets/codemain.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#div1 {
+  font-size:48px;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 31, 2021 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("tiempo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("tiempo").innerHTML = "EXPIRED";
+  }
+
+</script>
+
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <b>For</b>Dev
+  </div>
+
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top"><b>COMING SOON</b></h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center" id="tiempo"></p>
+
+  </div>
+
+
+<div>
+    <a href="">
+    <img class="w3-right" src="assets/insta.png" alt="Instagram" style="width:2.2%">
+    </a>
+    <a href="https://twitter.com/BreaSoy">
+    <img class="w3-right" src="assets/tw.png" alt="Twitter" style="width:2%">
+    </a>
+    <a href="https://github.com/BreaG">
+    <img class="w3-right" src="assets/git.png" alt="GitHub" style="width:1.9%">
+    </a>
+
+</div>
+
+<div class="w3-display-bottomleft w3-padding-large">
+   Powered by <a href="https://github.com/BreaG" target="_blank">Brea</a>
+</div>
+
+
+</div>
+
+</body>
+
+</html>
